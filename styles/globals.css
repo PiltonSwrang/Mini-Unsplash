@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+}
+.pagination {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.pagination a{
+  padding: 0.5rem;
+  color: blue;
+  cursor: pointer;
+}
+.tall {
+  grid-row: span 2/ auto !important;
+}
+.wide {
+  grid-column: span 2 / auto !important;
+}
+.modal-content {
+  background: white;
+  border: 2px solid black;
+  width: 80%;
+  margin: 2rem auto;
+}
+.modal-content h1 {
+  color: red;
+}
